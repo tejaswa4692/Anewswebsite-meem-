@@ -1,0 +1,88 @@
+@font-face {
+    font-family: mynewfont;
+    src: url("BBHSansBogle-Regular.ttf");
+}
+@font-face {
+    font-family: roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+.headerbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(150, 60, 60);
+    margin-top: 10px;
+    padding-top: 30px;
+    color: white;
+    font-size: 100px;
+    padding-bottom: 0px;
+    font-family: mynewfont;
+    padding-left: 20px;
+}
+
+.heading{
+    font-family: mynewfont;
+    font-weight: 10;
+    font-size: 100;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+.hyperlink{
+    color: white;
+    text-decoration: none;
+}
+.hyperlink:hover{
+    color: rgb(198, 102, 102);
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.leftpanel {
+    padding: 20px;
+    flex: 1;    
+    background-color: antiquewhite;
+}
+
+.leftpanel h1{
+    color: black;
+    margin-top: 0; 
+    margin-bottom: 0;
+    font-family: mynewfont;
+    font-weight: 100;
+}
+
+.leftpanel p{
+    color: black;
+    margin-top: 5px;
+    font-family: roboto;
+    font-weight: 100;
+    font-size: 15;
+}
+
+.leftpanel img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card{
+    margin-bottom: 30px;
+}
+
+.centercard{
+    margin-bottom: 30px;
+}
+
+.statistics{
+  overflow: scroll;
+  scrollbar-color: rgb(167, 163, 159) #ffd7a6;
+  scrollbar-width: thin;
+  background-color: #ffd7a6; height: 400px; overflow: hidden; overflow-y: scroll;
+  height: 100% + 40%;
+}
