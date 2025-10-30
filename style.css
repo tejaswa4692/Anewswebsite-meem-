@@ -20,6 +20,8 @@
     padding-left: 20px;
 }
 
+
+
 .heading{
     font-family: mynewfont;
     font-weight: 10;
@@ -46,7 +48,7 @@
 
 .leftpanel_big {
     padding: 20px;
-    flex: 2;    
+    flex: 3;    
     background-color: antiquewhite;
 }
 
@@ -56,6 +58,7 @@
     margin-bottom: 0;
     font-family: mynewfont;
     font-weight: 100;
+    font-size: 300%;
 }
 
 .leftpanel_big p{
@@ -63,18 +66,21 @@
     margin-top: 5px;
     font-family: roboto;
     font-weight: 100;
-    font-size: 15;
+    font-size: 20;
 }
 
 .leftpanel_big img{
     object-fit: cover;
     width: 100%;
-    height: 350px;
+    height: 20%;
     border-radius: 10px;
 }
 
 .card{
     margin-bottom: 30px;
+    background-color: rgb(255, 221, 201);
+    padding: 10px;
+    border-radius: 3%;
 }
 
 .centercard{
@@ -116,4 +122,127 @@
     height: 50%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.leftpanel{
+    background-color: #ffd7a6;
+    width: 100%;
+    height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    margin-top: 6px;
+    padding-bottom: 30%;
+}
+
+.leftpanel h1{
+    font-family: mynewfont;
+    font-weight: 100;
+    font-size: xxx-large;
+    margin-bottom: 0;
+}
+
+.leftpanel button{
+    font-size: x-large;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #9f5e2c;
+    color: white;
+    font-family: roboto;
+
+    margin-top: 20px;
+}
+
+.leftpanel button:hover{
+    font-size: x-large;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #9f5e2ca1;
+    color: white;
+    font-family: roboto;
+
+    margin-top: 19px;
+}
+
+.leftpanel button:active{
+    font-size: x-large;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #681c1ca8;
+    color: white;
+    font-family: roboto;
+
+    margin-top: 21px;
+}
+
+
+
+.headingbox{
+    border-radius: 50;
+    resize: none;
+    width: 50%;
+    height: 6.6%;
+    border: 0;
+    font-family: mynewfont;
+    font-size: 40px;
+    padding-left: 10px;
+    overflow: none;
+    border-radius: 10px;
+    padding: 10px;
+
+        overflow: hidden;
+}
+
+
+.linkbox{
+    border-radius: 50;
+    resize: none;
+    width: 90%;
+    height: 7%;
+    border: 0;
+    border-radius: 10px;
+    font-family: roboto;
+    font-size: 20px;
+    padding-left: 10px;
+    padding: 10px;
+
+    
+}
+
+.contentbox{
+    border-radius: 50;
+    resize: none;
+    width: 90%;
+    height: 30%;
+    border: 0;
+    border-radius: 10px;
+    font-family: roboto;
+    font-size: 20px;
+    padding-left: 10px;
+    padding: 10px;
+
+    
+}
+
+.datebox{
+    border: 0;
+    font-family: mynewfont;
+    font-weight: 10px;
+    font-size: 200%;
+    border-radius: 10px;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
