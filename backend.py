@@ -24,25 +24,32 @@ def init():
 
 @app.route("/add_card", methods=["POST"])
 def add_cards():
-    data = request.json
-    required_fields = ["heading", "imglnk", "content", "date"]
-    for field in required_fields:
-        if required_fields not in data:
-            return jsonify({"error": f"Missing field: {field}"}), 400
+    try:
+        data = request.get_json()
+
+        # Extract fields
+        date = data.get("date")
+        heading = data.get("heading")
+        content = data.get("content")
+        imglnk = data.get("imglnk")
         
-    response = supabase.table("newscards").insert({
-    "heading": data["heading"],
-    "imglnk": data["imglnk"],
-    "content": data["content"],
-    "date": data["date"]
-    }).execute()
-
-    if response.status_code != 201 and response.status_code != 200:
-        return jsonify({"error": "Failed to add card", "details": response.data}), 500
-
-    return jsonify({"message": "Card added successfully!", "card": response.data}), 201
+        print(heading, date, content, imglnk)
 
 
+        # Insert into Supabase
+        response = supabase.table("newscard").insert({
+            "date": content,
+            "heading": date,
+            "content": heading,
+            "imglnk": imglnk,
+            
+            }).execute()
+
+        return jsonify({"message": "Card added successfully!", "card": response.data}), 201
+    
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 

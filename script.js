@@ -6,10 +6,19 @@ async function init() {
     
     data.forEach(c => {
         addcards(c.heading, c.imglnk, c.content, c.date);
-    });
-
-    
+    });    
 }
+
+
+// document.getElementById("uploadbutton").addEventListener("click", function() {
+//     const button = document.getElementById("uploadbutton");
+//     button.innerText = "upload entry"
+    
+// })
+
+
+
+
 
 async function addcards(heading,image, content, date) {
     console.log("adding")
