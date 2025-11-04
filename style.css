@@ -40,18 +40,21 @@
     text-decoration: none;
 }
 
+/* container that contains all 3 cards */
 .container{
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
+/* center card */
 .leftpanel_big {
     padding: 20px;
     flex: 3;    
-    background-color: antiquewhite;
+    background-color: rgba(217, 217, 217, 1);
 }
 
+/* heading of center card */
 .leftpanel_big h1{
     color: black;
     margin-top: 0; 
@@ -61,6 +64,7 @@
     font-size: 300%;
 }
 
+/* paragraph of center card */
 .leftpanel_big p{
     color: black;
     margin-top: 5px;
@@ -69,36 +73,45 @@
     font-size: 20;
 }
 
+
+/* image of the center card */
 .leftpanel_big img{
     object-fit: cover;
     width: 100%;
     height: 300px;
+    
     border-radius: 10px;
 }
 
+/* an indivdual card (both sides) */
 .card{
     margin-bottom: 30px;
-    background-color: rgb(255, 221, 201);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 3%;
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* i have no idea why this exists (i forgot) */
 .centercard{
     margin-bottom: 30px;
 }
 
+
+
+/* left most coulumn intercard */
 .statistics{
   overflow: scroll;
-  scrollbar-color: rgb(167, 163, 159) #ffd7a6;
+  scrollbar-color: rgb(167, 163, 159) #b9b9b9;
   scrollbar-width: thin;
-  background-color: #ffd7a6; height: 400px; overflow: hidden; overflow-y: scroll;
+  background-color: #b9b9b9; height: 400px; overflow: hidden; overflow-y: scroll;
   height: 100% + 40%;
 }
 
 .leftpanel_small {
     padding: 20px;
     flex: 1;    
-    background-color: antiquewhite;
+    background-color: rgba(217, 217, 217, 1) ;
 }
 
 .leftpanel_small h1{
@@ -245,4 +258,23 @@
     padding: 3px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+.activities {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  background: url(assets/addbutton.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Rotate the button when pressed */
+.activities:hover {
+    transform: rotate(180deg); 
 }
